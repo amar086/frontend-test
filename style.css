@@ -1,0 +1,99 @@
+
+/**
+  Set the size of the body
+**/
+body{
+  height: 1024px;
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+}
+
+.menu-wrapper {
+  margin-top: 35px;
+}
+
+/**
+  Set the box with and height to 200px
+**/
+.box{
+  width: 200px;
+  height: 200px;
+}
+
+/**
+  Make the shawdow color gray
+**/
+div.box:hover {
+  box-shadow: 5px 10px 8px 10px gray;
+}
+
+
+.outline-box{
+  outline: 2px dashed blue;
+}
+
+.solid-box {
+  outline: 2px solid red;
+}
+
+.diamond-box {
+  transform: rotate(45deg);
+  background-color: green;
+}
+
+/**
+  Run animmation for 5s and repeat indefinitely
+  Set opacity to 0.5 to make element semi-transparent
+**/
+.spinning-box {
+  background-color: black;
+  opacity: 0.5;
+  animation: 5s linear spinner;
+  animation-iteration-count: infinite;
+}
+
+/**
+  Create the spinning animation
+**/
+@keyframes spinner {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.button-wrapper {
+  margin-top: 100px;
+}
+
+.content{
+  margin-top: 100px;
+  height: 80%;
+}
+
+.footer{
+  height: 10%;
+  position: relative;
+}
+
+div.footer-links> ul {
+	list-style: none;
+  text-align: center;
+}
+
+div.footer-links > ul > li {
+		display: inline;
+    padding-left: 10px;
+    color: gray;
+}

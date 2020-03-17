@@ -1,38 +1,58 @@
 <!DOCTYPE html>
-
-<head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UI/UX Test Site</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="main.js"></script>
-</head>
-
-<body>
-    <header class="header">
-        <div class="logo-wrapper"></div>
-        <div class="menu-wrapper">
-            <nav>
-                <a href="/">Blog</a>
-                <a href="/">Contact</a>
-                <a href="/">More</a>
-            </nav>
+  </head>
+  <body>
+      <header class="header row">
+          <div class="logo-wrapper col-md-2 col-xs-12">
+            <img class="logo" src="images/logo.png" alt="ui/ux test logo"></img>
+          </div>
+          <div class="menu-wrapper col-md-10 col-xs-12 ">
+              <nav class="nav nav-pills float-right">
+                  <a class="nav-item nav-link" href="/">Blog</a>
+                  <a class="nav-item nav-link" href="/">Contact</a>
+                  <a class="nav-item nav-link" href="/">More</a>
+              </nav>
+          </div>
+      </header>
+      <section class="content container">
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="outline-box box"></div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="solid-box box"></div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="diamond-box box"></div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="spinning-box box"></div>
+          </div>
         </div>
-    </header>
-    <section class="content">
-        <div class="outline-box box"></div>
-        <div class="solid-box box"></div>
-        <div class="diamond-box box"></div>
-        <div class="spinning-box box"></div>
-        <button>Make invisible</button>
-    </section>
-    <footer class="footer">
-        <div class="footer-links">
-            <ul>
-                <li>Blog</li>
-                <li>Contact Us</li>
-                <li>Email: test@quarant-8.com</li>
-                <li>555-1234</li>
-            </ul>
+        <div class="row button-wrapper">
+            <div class="col-md-12" style="text-align:center">
+          <button class="btn btn-primary" onclick="toggleSpinning()">Make invisible</button>
         </div>
-    </footer>
-</body>
+        </div>
+      </section>
+      <footer class="footer">
+          <div class="footer-links">
+              <ul>
+                  <li><a href="/">Blog</a></li>
+                  <li><a href="/">Contact Us</a></li>
+                  <li>Email:<a href="mailto:test@quarant-8.com" target="_top" href="/"> test@quarant-8.com</a></li>
+                  <li><a href="/">555-1234</a></li>
+              </ul>
+          </div>
+      </footer>
+  </body>
 
 </html>
